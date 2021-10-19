@@ -21,7 +21,7 @@ jobs:
         aws-region: ${{region}}
     - name: ECR Login
       run: |
-       aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 292090429255.dkr.ecr.ap-south-1.amazonaws.com
-       docker build -t dockerfile .
-       docker tag dockerfile:latest 292090429255.dkr.ecr.ap-south-1.amazonaws.com/dockerfile:latest
-       docker push 292090429255.dkr.ecr.ap-south-1.amazonaws.com/dockerfile:latest   
+       aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 479906876926.dkr.ecr.us-east-1.amazonaws.com
+       docker build -t python .
+       docker tag python:latest 479906876926.dkr.ecr.us-east-1.amazonaws.com/python:latest
+       docker push 479906876926.dkr.ecr.us-east-1.amazonaws.com/python:latest
