@@ -16,7 +16,7 @@ jobs:
       with:
         aws-access-key-id: ${{ AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ AWS_SECRET_ACCESS_KEYY }}
-        aws-region: ap-south-1
+        aws-region: ${{region}}
     - name: ECR Login
       run: |
        aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 292090429255.dkr.ecr.ap-south-1.amazonaws.com
