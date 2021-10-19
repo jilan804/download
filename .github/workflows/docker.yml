@@ -8,11 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./csvtojson
     steps:
     - uses: actions/checkout@v2
     - name: Build the docker file
       run: |
-        cd download/csvtojson/
         docker build -t dockerfile .
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
