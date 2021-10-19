@@ -23,7 +23,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEYY }}
         aws-region: us-east-1
         role-to-assume: ${{ secrets.ROLE_ARN }}
-        role-session-name: MySessionName
+        role-session-name: permission
         duration_seconds: 3600
     - name: ECR Login
       run: |
