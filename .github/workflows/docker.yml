@@ -13,7 +13,7 @@ jobs:
     - name: Build the docker file
       run: |
         working-directory: csvtojson
-        docker build -t .       
+        docker build .       
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
