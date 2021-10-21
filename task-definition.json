@@ -37,7 +37,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "479906876926.dkr.ecr.us-east-1.amazonaws.com/nginx:latest",
+      "image": "479906876926.dkr.ecr.us-east-1.amazonaws.com/my-ecr-repo:6d9ee3b60a484b547b6c7c56dfb1ab0d60f5cf03",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
