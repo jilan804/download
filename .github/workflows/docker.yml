@@ -1,8 +1,9 @@
 name: Deploy python application
 on:
   push:
-    branches:
-      - master   
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 env:
   AWS_REGION: us-east-1        
   ECR_REPOSITORY: nginx        
