@@ -2,16 +2,13 @@ name: Deploy python application
 on:
   push:
     branches:
-      - master
-  pull_request:
-    branches: [ master ]    
+      - master   
 env:
   AWS_REGION: us-east-1        
   ECR_REPOSITORY: nginx        
   ECS_SERVICE: application            
   ECS_CLUSTER: application            
   ECS_TASK_DEFINITION: task-definition.json
-                                              
   CONTAINER_NAME: application      
                                                
 jobs:
